@@ -79,3 +79,4 @@ Set the initial baseline row pointing to their new `CV_Base.tex`.
 2. Provide a single clean wrap-up message:
    - Summary of the profile configured (Candidate name, target title, verified stack).
    - Instructions on how to drop their first JD into `JD/` and trigger tailoring with *"new JD"*.
+
