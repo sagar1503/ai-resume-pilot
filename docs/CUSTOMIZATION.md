@@ -36,3 +36,4 @@ If applying for non-technical fields (e.g., Marketing, Sales, Operations, Health
 - Replace the `CORE SKILLS` table categories in `CV_Base.tex` with your discipline's terminology.
 - Use `resume-bullet-writer` to frame achievements around **revenue generated, efficiency gained, volume handled, or client satisfaction**.
 - The ATS optimizer and Cover Letter generator will automatically mirror the exact industry jargon found in each incoming job description.
+

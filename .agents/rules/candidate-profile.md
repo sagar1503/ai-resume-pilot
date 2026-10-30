@@ -82,3 +82,4 @@ Define requirements that should trigger an automatic **SKIP** instead of generat
   - *"I would welcome the opportunity to discuss..."*
   - *"In today's data-driven world..."*
 - **Sign-off**: Use region-appropriate closings (e.g., `Kind regards` in UK/Europe, `Sincerely` in US).
+

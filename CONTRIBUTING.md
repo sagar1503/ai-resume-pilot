@@ -20,3 +20,4 @@ We welcome community contributions to make AI Resume Pilot more versatile, relia
 - Keep templates single-page friendly and strictly ATS compliant (avoid floating boxes, tables inside headers, or untagged symbols).
 - Never commit private personal data, active phone numbers, or authentication tokens.
 - Follow the MIT License terms.
+

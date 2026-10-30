@@ -36,3 +36,4 @@ tailoring_preferences:
   default_currency: "GBP"    # e.g. GBP (£), USD ($), EUR (€)
   max_page_count: 1          # 1 page recommended for industry, 2 for senior/academic
   strict_anti_hallucination: true # Never invent numbers, dates, or credentials
+

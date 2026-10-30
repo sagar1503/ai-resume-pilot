@@ -46,3 +46,4 @@ overleaf_sync:
 ```
 
 Once enabled, whenever the AI finishes tailoring a `.tex` resume or cover letter, it will commit and push to Overleaf automatically.
+

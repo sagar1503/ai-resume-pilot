@@ -28,3 +28,4 @@
 - **Security Clearance**: Not currently holding SC clearance (requires 5 years UK residency).
 - **Driving**: No car / driving license required.
 - **Relocation**: Fully open to London hybrid or UK-wide remote.
+

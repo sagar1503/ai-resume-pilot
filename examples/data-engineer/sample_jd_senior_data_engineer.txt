@@ -24,3 +24,4 @@ Requirements:
 Nice to Have:
 - Experience in financial services or high-throughput event processing.
 - Familiarity with CI/CD, Docker, and Kubernetes.
+

@@ -1,11 +1,32 @@
 # 🎯 AI Resume Pilot
 
 > **Autonomous, Zero-Hallucination Resume Tailoring & Application Copilot**  
-> Powered by AI coding assistants (Google Antigravity, Claude Code, Cursor, Codex) + ATS-Optimized LaTeX.
+> Powered by AI coding assistants (Google Antigravity, Claude Code, Cursor, Codex, ChatGPT) + ATS-Optimized LaTeX.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Template: LaTeX](https://img.shields.io/badge/Template-LaTeX%20ATS-teal.svg)](CV_Base.tex)
-[![Skills: 22 Built-in](https://img.shields.io/badge/Agent%20Skills-22%20Autonomous-orange.svg)](.agents/skills/)
+[![Skills: 23 Built-in](https://img.shields.io/badge/Agent%20Skills-23%20Autonomous-orange.svg)](.agents/skills/)
+
+---
+
+## 🚀 1-Click Setup with ANY AI (No Manual Work Needed!)
+
+You don't need to manually edit `.tex` or `.yaml` files. You can hand this repository and your raw resume to **ANY AI assistant** (Antigravity, Cursor, Claude Code, ChatGPT, GitHub Copilot) and let it set up everything automatically!
+
+### How it works:
+1. Clone or fork this repo.
+2. Open it in your AI coding assistant (or copy the master prompt in **[`AI_SETUP_PROMPT.md`](AI_SETUP_PROMPT.md)** into your AI chat).
+3. Paste your existing CV / resume text and say:
+   > *"I want to set up this repo for my job search. Here is my current resume: [paste resume]"*
+4. **The AI will interview you** for anything missing:
+   - Target field & dream job titles (e.g. Data Engineering, Machine Learning, Full-Stack SWE).
+   - Real metrics for your **anti-hallucination moat** (e.g. data volumes, runtime cuts, money saved).
+   - Work authorization, visa status, and location flexibility.
+   - Whether you want automatic sync with an **Overleaf** project for online PDF compilation.
+5. The AI automatically writes **`config.yaml`**, generates your ATS-friendly **`CV_Base.tex`**, builds **`.agents/rules/candidate-profile.md`**, and resets your **`Resume_Tracker.md`**.
+6. You're ready to start tailoring!
+
+*(Prefer terminal? Run `python setup.py` for a guided CLI wizard!)*
 
 ---
 
@@ -17,7 +38,7 @@ Most AI-generated resumes fail because they:
 3. **Break ATS parsers** with complex column layouts and floating boxes.
 4. **Take too long to manually format** for every single company application.
 
-**AI Resume Pilot solves this completely.** It pairs a **22-skill agent intelligence library** with **strict anti-hallucination ground-truth rules** and an **ATS-perfect LaTeX engine**. You drop a job description into a folder, say *"new JD"*, and get a custom-tailored `.tex` resume and cover letter ready to compile.
+**AI Resume Pilot solves this completely.** It pairs a **23-skill agent intelligence library** with **strict anti-hallucination ground-truth rules** and an **ATS-perfect LaTeX engine**. You drop a job description into a folder, say *"new JD"*, and get a custom-tailored `.tex` resume and cover letter ready to compile.
 
 ```mermaid
 flowchart LR
@@ -32,41 +53,12 @@ flowchart LR
 
 ---
 
-## ⚡ Quick Start (Under 3 Minutes)
+## ⚡ Quick Daily Workflow (Once Configured)
 
-### 1. Clone or Fork this Repo
-```bash
-git clone https://github.com/your-username/ai-resume-pilot.git
-cd ai-resume-pilot
-```
-
-### 2. Configure Your Profile
-Edit **`config.yaml`** with your contact information and target domain:
-```yaml
-candidate:
-  first_name: "Alex"
-  last_name: "Taylor"
-  title: "Data Engineer | Cloud ETL & Distributed Systems"
-  email: "alex.taylor@example.com"
-  location: "London, UK"
-  linkedin: "https://linkedin.com/in/alex-taylor-de"
-  github: "https://github.com/alextaylor-data"
-```
-
-### 3. Establish Ground Truth
-Edit **`.agents/rules/candidate-profile.md`** with your verified numbers and career dates. The AI will **strictly bind itself** to these facts and will **never** invent fake metrics.
-
-### 4. Set Up Your Base CV
-Edit **`CV_Base.tex`** with your master work history, or copy one of the pre-built templates:
-- **Data Engineering / Data Science**: `examples/data-engineer/CV_Base_DataEngineer.tex`
-- **Software Engineering**: `examples/software-engineer/CV_Base_SWE.tex`
-- **Microsoft 365 / SharePoint**: `examples/sharepoint-m365/CV_Base_SharePoint.tex`
-
-### 5. Tailor For Any Job in One Command
 1. Drop any job description (`.txt`, `.rtf`, `.md`, or `.pdf`) into the `JD/` directory.
 2. Tell your AI assistant:
    > *"I've added a new JD for Stripe"*
-3. The AI handles the rest! It crafts `Alex_Taylor_CV_Stripe.tex`, enforces ATS keywords, optimizes bullets with the Google XYZ formula, and logs the application into `Resume_Tracker.md`.
+3. The AI handles the rest! It crafts `[Name]_CV_Stripe.tex`, enforces ATS keywords, optimizes bullets with the Google XYZ formula, updates `Resume_Tracker.md`, and pushes to Overleaf (if configured).
 
 ---
 
@@ -81,12 +73,13 @@ We have pre-configured turnkey templates in `examples/data-engineer/`:
 
 ---
 
-## 🧠 The 22 Autonomous Agent Skills
+## 🧠 The 23 Autonomous Agent Skills
 
-AI Resume Pilot includes 22 production-grade skills located in `.agents/skills/`:
+AI Resume Pilot includes 23 production-grade skills located in `.agents/skills/`:
 
 | Skill | Category | Description |
 |---|---|---|
+| `onboarding-wizard` | Setup | Interactively interviews user, ingests raw resumes, and auto-configures the repository |
 | `resume-tailor` | Core | Strategically highlights matching experience without altering truth |
 | `resume-bullet-writer` | Core | Rigorously enforces Google XYZ formula: *Accomplished [X] measured by [Y] by doing [Z]* |
 | `job-description-analyzer` | Core | Match score calculation, must-have vs nice-to-have breakdown, gap analysis |
